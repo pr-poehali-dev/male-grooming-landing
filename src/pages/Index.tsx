@@ -414,21 +414,7 @@ const Index = () => {
             </Card>
           </div>
 
-          {/* Interactive Map */}
-          <div className="max-w-4xl mx-auto mb-12 animate-fade-in">
-            <Card className="bg-steel/20 border border-gold/30 shadow-lg overflow-hidden">
-              <CardContent className="p-0">
-                <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=60.597474%2C56.838011&z=17&l=map&pt=60.597474,56.838011,pm2rdm~Екатеринбург, ул. Культуры 2, кабинет 115.3, 2 этаж"
-                  width="100%"
-                  height="400"
-                  frameBorder="0"
-                  className="w-full h-96"
-                  title="Карта с адресом салона: Екатеринбург, ул. Культуры 2, кабинет 115.3, 2 этаж"
-                />
-              </CardContent>
-            </Card>
-          </div>
+
           
           <div className="text-center animate-fade-in">
             <div className="bg-gold/10 border border-gold/30 rounded-lg p-8 max-w-2xl mx-auto">
