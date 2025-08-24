@@ -6,26 +6,17 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section with Background Image */}
-      <section 
-        className="relative py-20 overflow-hidden text-white min-h-screen"
-        style={{
-          backgroundImage: "url('https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'right center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="absolute inset-0 bg-black/60"></div>
+      {/* Hero Section */}
+      <section className="py-20 min-h-screen bg-background">
         
         {/* Desktop Layout */}
-        <div className="hidden lg:flex container mx-auto px-4 relative z-10 min-h-screen">
-          <div className="flex items-center justify-start w-full">
-            <div className="max-w-2xl space-y-8 ml-8">
+        <div className="hidden lg:flex container mx-auto px-4 min-h-screen">
+          <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+            <div className="space-y-8">
               <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight text-gold">
                 "Я — Натали, мастер депиляции с 2021 года"
               </h1>
-              <div className="bg-black/40 backdrop-blur-sm rounded-lg p-6 border border-gold/30">
+              <div className="bg-steel/20 backdrop-blur-sm rounded-lg p-6 border border-gold/30">
                 <p className="text-xl text-white font-medium leading-relaxed">
                   Работаю исключительно с мужчинами. 
                   Гарантирую безболезненные процедуры и идеальный результат. 
@@ -45,13 +36,33 @@ const Index = () => {
                 </Button>
               </div>
             </div>
+            <div className="flex justify-end">
+              <div className="relative w-full max-w-lg">
+                <div className="absolute inset-0 bg-gradient-to-tr from-gold/40 to-steel/20 rounded-full blur-3xl opacity-40 -z-10 scale-110"></div>
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-gold/30">
+                  <img 
+                    src="https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg" 
+                    alt="Натали - мастер депиляции для мужчин" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Mobile Layout */}
-        <div className="lg:hidden container mx-auto px-4 relative z-10 min-h-screen flex flex-col">
-          <div className="flex-1"></div>
-          <div className="flex-1 flex flex-col justify-end pb-20 space-y-6">
+        <div className="lg:hidden container mx-auto px-4 min-h-screen flex flex-col justify-center">
+          <div className="space-y-8">
+            <div className="relative w-full max-w-sm mx-auto mb-8">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-gold/30">
+                <img 
+                  src="https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg" 
+                  alt="Натали - мастер депиляции для мужчин" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
             <div className="text-center space-y-6">
               <h1 className="text-3xl sm:text-4xl font-heading font-bold leading-tight text-gold">
                 "Я — Натали, мастер депиляции с 2021 года"
