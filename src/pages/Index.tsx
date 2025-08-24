@@ -16,8 +16,8 @@ const Index = () => {
               <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight text-gold">
                 "Я — Натали, мастер депиляции с 2021 года"
               </h1>
-              <div className="bg-steel/20 backdrop-blur-sm rounded-lg p-6 border border-gold/30">
-                <p className="text-xl text-white font-medium leading-relaxed">
+              <div className="bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-steel/30">
+                <p className="text-xl text-foreground font-medium leading-relaxed">
                   Работаю исключительно с мужчинами. 
                   Гарантирую безболезненные процедуры и идеальный результат. 
                   Создаю атмосферу комфорта для каждого клиента.
@@ -25,7 +25,7 @@ const Index = () => {
               </div>
               <div className="flex flex-wrap gap-4">
                 <a href="https://t.me/sugar_TS" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
+                  <Button size="lg" className="bg-gold text-gold-foreground hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
                     <Icon name="MessageCircle" size={20} className="mr-2" />
                     Записаться @sugar_TS
                   </Button>
@@ -38,8 +38,8 @@ const Index = () => {
             </div>
             <div className="flex justify-end">
               <div className="relative w-full max-w-lg">
-                <div className="absolute inset-0 bg-gradient-to-tr from-gold/40 to-steel/20 rounded-full blur-3xl opacity-40 -z-10 scale-110"></div>
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-gold/30">
+                <div className="absolute inset-0 bg-gradient-to-tr from-steel/30 to-gold/20 rounded-full blur-3xl opacity-30 -z-10 scale-110"></div>
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl border-2 border-steel/40">
                   <img 
                     src="https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg" 
                     alt="Натали - мастер депиляции для мужчин" 
@@ -55,7 +55,7 @@ const Index = () => {
         <div className="lg:hidden container mx-auto px-4 min-h-screen flex flex-col justify-center">
           <div className="space-y-8">
             <div className="relative w-full max-w-sm mx-auto mb-8">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-gold/30">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-2 border-steel/40">
                 <img 
                   src="https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg" 
                   alt="Натали - мастер депиляции для мужчин" 
@@ -68,7 +68,7 @@ const Index = () => {
                 "Я — Натали, мастер депиляции с 2021 года"
               </h1>
               <div className="bg-black/60 backdrop-blur-sm rounded-lg p-6 border border-gold/30">
-                <p className="text-lg text-white font-medium leading-relaxed">
+                <p className="text-lg text-foreground font-medium leading-relaxed">
                   Работаю исключительно с мужчинами. 
                   Гарантирую безболезненные процедуры и идеальный результат. 
                   Создаю атмосферу комфорта для каждого клиента.
