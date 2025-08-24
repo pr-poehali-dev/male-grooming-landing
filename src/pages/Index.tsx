@@ -12,7 +12,7 @@ const Index = () => {
         style={{
           backgroundImage: "url('https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'right center',
           backgroundRepeat: 'no-repeat'
         }}
       >
@@ -419,12 +419,12 @@ const Index = () => {
             <Card className="bg-steel/20 border border-gold/30 shadow-lg overflow-hidden">
               <CardContent className="p-0">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=60.597474%2C56.838011&z=17&l=map&pt=60.597474,56.838011,pm2rdm~Екатеринбург, ул. Культуры 2, кабинет 115.3"
+                  src="https://yandex.ru/map-widget/v1/?ll=60.597474%2C56.838011&z=17&l=map&pt=60.597474,56.838011,pm2rdm~Екатеринбург, ул. Культуры 2, кабинет 115.3, 2 этаж"
                   width="100%"
                   height="400"
                   frameBorder="0"
                   className="w-full h-96"
-                  title="Карта с адресом салона: Екатеринбург, ул. Культуры 2, кабинет 115.3"
+                  title="Карта с адресом салона: Екатеринбург, ул. Культуры 2, кабинет 115.3, 2 этаж"
                 />
               </CardContent>
             </Card>
