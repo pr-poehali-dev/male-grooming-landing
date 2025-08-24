@@ -20,8 +20,8 @@ const Index = () => {
         
         {/* Desktop Layout */}
         <div className="hidden lg:flex container mx-auto px-4 relative z-10 min-h-screen">
-          <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
-            <div className="space-y-8">
+          <div className="flex items-center justify-center w-full">
+            <div className="max-w-4xl text-center space-y-8">
               <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight text-gold">
                 "Я — Натали, мастер депиляции с 2021 года"
               </h1>
@@ -32,7 +32,7 @@ const Index = () => {
                   Создаю атмосферу комфорта для каждого клиента.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <a href="https://t.me/sugar_TS" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
                     <Icon name="MessageCircle" size={20} className="mr-2" />
@@ -43,19 +43,6 @@ const Index = () => {
                   <Icon name="MapPin" size={20} className="mr-2" />
                   Екатеринбург
                 </Button>
-              </div>
-            </div>
-            <div className="flex justify-end">
-              <div className="relative w-full max-w-lg">
-                <div className="absolute inset-0 bg-gradient-to-tr from-gold/40 to-steel/20 rounded-full blur-3xl opacity-40 -z-10 scale-110"></div>
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-gold/30">
-                  <img 
-                    src="https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg" 
-                    alt="Натали - мастер депиляции для мужчин" 
-                    className="w-full h-auto object-cover"
-                  />
-
-                </div>
               </div>
             </div>
           </div>
