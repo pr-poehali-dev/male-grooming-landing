@@ -369,7 +369,7 @@ const Index = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center mr-4">
+                    <div className="">
                       <Icon name="MessageCircle" size={20} className="text-black" />
                     </div>
                     <div>
