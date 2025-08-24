@@ -434,10 +434,7 @@ const Index = () => {
                 Если что-то не понравится — верну деньги.
               </p>
               <a href="https://t.me/sugar_TS" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
-                  <Icon name="MessageCircle" size={20} className="mr-2" />
-                  Написать @sugar_TS
-                </Button>
+                <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">Написать </Button>
               </a>
             </div>
           </div>
