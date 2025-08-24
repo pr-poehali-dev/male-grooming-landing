@@ -20,8 +20,8 @@ const Index = () => {
         
         {/* Desktop Layout */}
         <div className="hidden lg:flex container mx-auto px-4 relative z-10 min-h-screen">
-          <div className="flex items-center justify-center w-full">
-            <div className="max-w-4xl text-center space-y-8">
+          <div className="flex items-center justify-start w-full">
+            <div className="max-w-2xl space-y-8 ml-8">
               <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight text-gold">
                 "Я — Натали, мастер депиляции с 2021 года"
               </h1>
@@ -32,7 +32,7 @@ const Index = () => {
                   Создаю атмосферу комфорта для каждого клиента.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4 justify-center">
+              <div className="flex flex-wrap gap-4">
                 <a href="https://t.me/sugar_TS" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
                     <Icon name="MessageCircle" size={20} className="mr-2" />
@@ -419,12 +419,12 @@ const Index = () => {
             <Card className="bg-steel/20 border border-gold/30 shadow-lg overflow-hidden">
               <CardContent className="p-0">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c5f3146c7b20c3fe7c0c7ed7ac5d9ca4e6e2b7b0d7c4e8eb8e4a5d2c8e8c8d7&amp;source=constructor"
+                  src="https://yandex.ru/map-widget/v1/?ll=60.597474%2C56.838011&z=17&l=map&pt=60.597474,56.838011,pm2rdm~Екатеринбург, ул. Культуры 2, кабинет 115.3"
                   width="100%"
                   height="400"
                   frameBorder="0"
                   className="w-full h-96"
-                  title="Карта с адресом салона"
+                  title="Карта с адресом салона: Екатеринбург, ул. Культуры 2, кабинет 115.3"
                 />
               </CardContent>
             </Card>
