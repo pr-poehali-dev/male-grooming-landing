@@ -6,46 +6,38 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="relative bg-black text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-transparent"></div>
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative py-20 overflow-hidden text-white min-h-screen flex items-center"
+        style={{
+          backgroundImage: "url('https://cdn.poehali.dev/files/1e345896-784d-4147-a1c0-6145871dfccb.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-fade-in">
-              <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight">
-                Наталья <span className="text-gold">Цурикова</span>
-              </h1>
-              <p className="text-xl lg:text-2xl font-medium text-gray-300">
-                Мастер депиляции с 2021 года
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h1 className="text-4xl lg:text-6xl font-heading font-bold leading-tight text-gold mb-8">
+              "Я — Натали, мастер депиляции с 2021 года"
+            </h1>
+            <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 border border-gold/30 max-w-3xl mx-auto">
+              <p className="text-xl text-white font-medium leading-relaxed">
+                Работаю исключительно с мужчинами. 
+                Гарантирую безболезненные процедуры и идеальный результат. 
+                Создаю атмосферу комфорта для каждого клиента.
               </p>
-              <div className="bg-steel/20 backdrop-blur-sm rounded-lg p-6 border border-gold/30">
-                <p className="text-lg text-gray-100 font-medium leading-relaxed">
-                  "Я — Натали, мастер депиляции с 2021 года. Работаю исключительно с мужчинами. 
-                  Гарантирую безболезненные процедуры и идеальный результат. 
-                  Создаю атмосферу комфорта для каждого клиента."
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
-                  <Icon name="MessageCircle" size={20} className="mr-2" />
-                  Записаться в Telegram
-                </Button>
-                <Button variant="outline" size="lg" className="border-gold text-gold hover:bg-gold hover:text-black font-semibold px-8 py-3 text-lg">
-                  <Icon name="MapPin" size={20} className="mr-2" />
-                  Адрес салона
-                </Button>
-              </div>
             </div>
-            <div className="relative animate-scale-in">
-              <div className="absolute inset-0 bg-gradient-to-tr from-gold/40 to-steel/20 rounded-full blur-3xl opacity-40 -z-10 scale-110"></div>
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-gold/30">
-                <img 
-                  src="https://cdn.poehali.dev/files/b9477b19-c005-4c80-bae3-e3cef491c416.jpeg" 
-                  alt="Наталья Цурикова - мастер депиляции" 
-                  className="w-full max-w-md mx-auto object-cover h-96"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
+                <Icon name="MessageCircle" size={20} className="mr-2" />
+                Записаться @sugar_TS
+              </Button>
+              <Button variant="outline" size="lg" className="border-gold text-gold hover:bg-gold hover:text-black font-semibold px-8 py-3 text-lg">
+                <Icon name="MapPin" size={20} className="mr-2" />
+                Екатеринбург
+              </Button>
             </div>
           </div>
         </div>
@@ -126,8 +118,93 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Pricing Section */}
       <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-3xl lg:text-4xl font-heading font-bold text-black mb-4">
+              Мужской прайс
+            </h2>
+            <p className="text-lg text-steel">
+              Честные цены на все процедуры
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-white shadow-xl border-l-4 border-l-gold">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-heading font-semibold text-black mb-6">
+                      Восковая депиляция
+                    </h3>
+                    <div className="space-y-3 text-steel">
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Окантовка бороды</span>
+                        <span className="font-semibold text-gold">1000₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Уши / Нос</span>
+                        <span className="font-semibold text-gold">700₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Подмышки</span>
+                        <span className="font-semibold text-gold">1000₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Руки до локтя</span>
+                        <span className="font-semibold text-gold">2000₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Руки полностью</span>
+                        <span className="font-semibold text-gold">2500₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-heading font-semibold text-black mb-6">
+                      Интимная зона
+                    </h3>
+                    <div className="space-y-3 text-steel">
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Бикини. Глубокое</span>
+                        <span className="font-semibold text-gold">2500₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Бикини. Классика</span>
+                        <span className="font-semibold text-gold">2000₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Спина / Торс</span>
+                        <span className="font-semibold text-gold">3000₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Ноги полностью</span>
+                        <span className="font-semibold text-gold">4000₽</span>
+                      </div>
+                      <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Голени</span>
+                        <span className="font-semibold text-gold">2000₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-8 pt-6 border-t border-gray-200">
+                  <div className="bg-gold/10 rounded-lg p-6 text-center">
+                    <h4 className="font-semibold text-black mb-2">Моментальный загар</h4>
+                    <p className="text-steel">Цена зависит от зоны покрытия. Обсуждаем индивидуально при записи.</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl lg:text-4xl font-heading font-bold text-black mb-4">
@@ -161,6 +238,39 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
               
+              <AccordionItem value="tan-process" className="border border-gray-200 rounded-lg px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline py-6 text-black">
+                  Как проходит процедура моментального загара?
+                </AccordionTrigger>
+                <AccordionContent className="text-steel pb-6">
+                  Наношу профессиональное средство равномерными движениями по всему телу. 
+                  Использую только сертифицированную косметику. Через 2-3 часа у вас уже красивый 
+                  естественный оттенок. Процедура абсолютно безопасна для кожи.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="tan-duration" className="border border-gray-200 rounded-lg px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline py-6 text-black">
+                  Как долго держится автозагар?
+                </AccordionTrigger>
+                <AccordionContent className="text-steel pb-6">
+                  Моментальный загар держится 7-10 дней, постепенно светлея. Всё зависит от типа кожи 
+                  и ухода. Рекомендую использовать увлажняющие средства для продления эффекта. 
+                  Повторную процедуру можно делать через неделю.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="hygiene" className="border border-gray-200 rounded-lg px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline py-6 text-black">
+                  Как вы соблюдаете гигиену во время процедур?
+                </AccordionTrigger>
+                <AccordionContent className="text-steel pb-6">
+                  Строго соблюдаю все санитарные нормы. Использую одноразовые расходники, 
+                  стерилизую инструменты в сухожаровом шкафу. Руки обрабатываю антисептиком 
+                  перед каждым клиентом. Кабинет ежедневно дезинфицируется УФ-лампой.
+                </AccordionContent>
+              </AccordionItem>
+              
               <AccordionItem value="preparation" className="border border-gray-200 rounded-lg px-6 bg-white">
                 <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline py-6 text-black">
                   Как подготовиться к процедуре?
@@ -174,11 +284,11 @@ const Index = () => {
               
               <AccordionItem value="result" className="border border-gray-200 rounded-lg px-6 bg-white">
                 <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline py-6 text-black">
-                  Как долго держится результат?
+                  Как долго держится результат депиляции?
                 </AccordionTrigger>
                 <AccordionContent className="text-steel pb-6">
-                  Депиляция воском — 4-6 недель. Загар — 7-10 дней, постепенно светлеет. 
-                  При регулярных процедурах волосы становятся тоньше и растут медленнее.
+                  Депиляция воском — 4-6 недель. При регулярных процедурах волосы становятся тоньше 
+                  и растут медленнее, а промежутки между сеансами увеличиваются.
                 </AccordionContent>
               </AccordionItem>
               
@@ -209,7 +319,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
             <Card className="bg-steel/20 border border-gold/30 shadow-lg animate-fade-in">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-heading font-semibold mb-6 text-gold">
@@ -222,7 +332,7 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-white">Telegram</p>
-                      <p className="text-gray-300">@natasha_beauty_master</p>
+                      <p className="text-gray-300">@sugar_TS</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -250,7 +360,7 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-white">Салон красоты</p>
-                      <p className="text-gray-300">ул. Центральная, 25, 2 этаж</p>
+                      <p className="text-gray-300">Екатеринбург, ул. Культуры 2, кабинет 115.3, 2 этаж</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -266,8 +376,24 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Interactive Map */}
+          <div className="max-w-4xl mx-auto mb-12 animate-fade-in">
+            <Card className="bg-steel/20 border border-gold/30 shadow-lg overflow-hidden">
+              <CardContent className="p-0">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c5f3146c7b20c3fe7c0c7ed7ac5d9ca4e6e2b7b0d7c4e8eb8e4a5d2c8e8c8d7&amp;source=constructor"
+                  width="100%"
+                  height="400"
+                  frameBorder="0"
+                  className="w-full h-96"
+                  title="Карта с адресом салона"
+                />
+              </CardContent>
+            </Card>
+          </div>
           
-          <div className="text-center mt-12 animate-fade-in">
+          <div className="text-center animate-fade-in">
             <div className="bg-gold/10 border border-gold/30 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-heading font-semibold mb-4 text-gold">
                 Готовы попробовать?
@@ -278,7 +404,7 @@ const Index = () => {
               </p>
               <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
                 <Icon name="MessageCircle" size={20} className="mr-2" />
-                Написать в Telegram
+                Написать @sugar_TS
               </Button>
             </div>
           </div>
