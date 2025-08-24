@@ -368,7 +368,7 @@ const Index = () => {
             <Card className="bg-steel/20 border border-gold/30 shadow-lg animate-fade-in">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-heading font-semibold mb-6 text-gold">
-                  Запись и вопросы
+                  Режим работы
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
