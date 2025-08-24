@@ -30,10 +30,7 @@ const Index = () => {
               </p>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">
-                <Icon name="MessageCircle" size={20} className="mr-2" />
-                Записаться @sugar_TS
-              </Button>
+              <Button size="lg" className="bg-gold text-black hover:bg-gold/90 font-semibold px-8 py-3 text-lg animate-scale-in shadow-lg">Записаться </Button>
               <Button variant="outline" size="lg" className="border-gold text-gold hover:bg-gold hover:text-black font-semibold px-8 py-3 text-lg">
                 <Icon name="MapPin" size={20} className="mr-2" />
                 Екатеринбург
