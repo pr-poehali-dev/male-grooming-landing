@@ -376,7 +376,7 @@ const Index = () => {
                       <Icon name="MessageCircle" size={20} className="text-black" />
                     </div>
                     <div>
-                      <p className="font-semibold text-white">Telegram</p>
+                      <p className="font-semibold text-white"></p>
                       <p className="text-gray-300"></p>
                     </div>
                   </div>
