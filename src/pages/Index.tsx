@@ -370,7 +370,6 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="">
-                      <Icon name="MessageCircle" size={20} className="text-black" />
                     </div>
                     <div>
                       <p className="font-semibold text-white"></p>
