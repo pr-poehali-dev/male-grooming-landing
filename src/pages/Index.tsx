@@ -211,11 +211,11 @@ const Index = () => {
                     <div className="space-y-3 text-steel">
                       <div className="flex justify-between items-center border-b border-gray-200 pb-2">
                         <span>Бикини. Глубокое</span>
-                        <span className="font-semibold text-gold">2500₽</span>
+                        <span className="font-semibold text-gold">3000₽</span>
                       </div>
                       <div className="flex justify-between items-center border-b border-gray-200 pb-2">
                         <span>Бикини. Классика</span>
-                        <span className="font-semibold text-gold">2000₽</span>
+                        <span className="font-semibold text-gold">2500₽</span>
                       </div>
                       <div className="flex justify-between items-center border-b border-gray-200 pb-2">
                         <span>Спина / Торс</span>
