@@ -420,6 +420,37 @@ const Index = () => {
 
 
           
+          {/* FAQ Section */}
+          <div className="max-w-2xl mx-auto mb-12 animate-fade-in">
+            <h2 className="text-3xl font-heading font-bold text-white text-center mb-8">Частые вопросы</h2>
+            <Accordion type="single" collapsible className="space-y-3">
+              <AccordionItem value="item-1" className="bg-card/10 border border-gold/20 rounded-lg px-6">
+                <AccordionTrigger className="text-white font-medium hover:text-gold">
+                  Вы оказываете интимные услуги?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-300">
+                  Нет. Я занимаюсь исключительно депиляцией и загаром. Услуги интимного характера не оказываю.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2" className="bg-card/10 border border-gold/20 rounded-lg px-6">
+                <AccordionTrigger className="text-white font-medium hover:text-gold">
+                  Больно ли делать депиляцию воском?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-300">
+                  Я использую профессиональные техники и материалы, которые делают процедуру максимально комфортной. Большинство клиентов отмечают минимальный дискомфорт.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3" className="bg-card/10 border border-gold/20 rounded-lg px-6">
+                <AccordionTrigger className="text-white font-medium hover:text-gold">
+                  Как записаться на процедуру?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-300">
+                  Напишите мне в Telegram — @sugar_TS. Отвечу быстро и подберём удобное время.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+
           <div className="text-center animate-fade-in">
             <div className="bg-gold/10 border border-gold/30 rounded-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-heading font-semibold mb-4 text-gold">
